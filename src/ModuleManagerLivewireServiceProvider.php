@@ -12,7 +12,6 @@ final class ModuleManagerLivewireServiceProvider extends ServiceProvider
     public function boot(): void
     {
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'module-manager-livewire');
-        Livewire\Livewire::component('module-manager-livewire-overview', Liberu\Foundation\ModuleManagerLivewire\Livewire\Overview::class);
+        Livewire::component('module-manager-livewire-overview', Liberu\Foundation\ModuleManagerLivewire\Livewire\Overview::class);
     }
 }
-
